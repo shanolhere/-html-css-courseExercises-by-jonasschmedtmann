@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px;
+}
+article {
+  padding-left: 0px;
+}
+.product {
+  border: 5px solid black;
+  width: 850px;
+  margin: 40px auto;
+  position: relative;
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.shipping {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.sale {
+  background-color: rgb(238, 70, 70);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  position: absolute;
+  top: -22px;
+  left: -25px;
+  padding: 6px;
+  margin: 4px;
+}
+.more-info {
+  text-decoration: underline;
+  color: black;
+}
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+.color {
+  background-color: black;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.color-blue {
+  background-color: rgb(56, 56, 241);
+}
+.color-red {
+  background-color: rgb(202, 36, 36);
+}
+.color-yellow {
+  background-color: rgb(228, 215, 31);
+}
+.color-green {
+  background-color: rgb(57, 226, 41);
+}
+.details-title {
+  margin-top: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.details-list {
+  list-style: square;
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  padding: 15px;
+}
+.add-cart:hover {
+  cursor: pointer;
+  background-color: white;
+  border-top: 4px solid black;
+  color: black;
+}
