@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px;
+}
+article {
+  padding-left: 0px;
+}
+.product {
+  border: 5px solid black;
+  width: 850px;
+  margin: 40px auto;
+  position: relative;
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(240, 14, 14);
+}
+.shipping {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+.para {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sale {
+  background-color: rgb(238, 70, 70);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  position: absolute;
+  top: -22px;
+  left: -25px;
+  padding: 6px;
+  margin: 4px;
+}
+.more-info {
+  text-decoration: underline;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+.color {
+  background-color: black;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+.color-blue {
+  background-color: rgb(56, 56, 241);
+}
+.color-red {
+  background-color: rgb(202, 36, 36);
+}
+.color-yellow {
+  background-color: rgb(228, 215, 31);
+}
+.color-green {
+  background-color: rgb(57, 226, 41);
+}
+.details-title {
+  margin-top: 22px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.details-list {
+  list-style: square;
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: none;
+  width: 100.2%;
+  padding: 20px;
+  margin: 0px;
+}
+.add-cart:hover {
+  cursor: pointer;
+  background-color: white;
+  border-top: 4px solid black;
+
+  color: black;
+}
+
+/* Using FlexBox */
+
+.container {
+  display: flex;
+  /*align-items: flex-start;*/
+}
+.shipping-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  /*background-color: red;*/
+}
+.price-container {
+  margin-left: 10px;
+  flex: 0 1 280px;
+  padding: 10px;
+  /*background-color: rgb(209, 122, 122);*/
+}
+.details-container {
+  align-items: center;
+  flex: 1;
+  margin-top: -9px;
+  padding: 10px;
+  /*background-color: rgb(107, 51, 51);*/
+}
