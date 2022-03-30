@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   background-color: azure;
@@ -22,21 +21,21 @@ article {
   margin: 40px auto;
   position: relative;
 }
-
 .price {
-  color: rgb(240, 14, 14);
   font-size: 24px;
   font-weight: bold;
-  float: left;
+  color: rgb(240, 11, 11);
 }
 .shipping {
   text-transform: uppercase;
   color: gray;
   font-size: 12px;
+  letter-spacing: 1.3px;
   font-weight: bold;
-  float: right;
-  margin-top: 8px;
-  margin-bottom: 22px;
+  margin-bottom: 0px;
+}
+.para {
+  margin-bottom: 14px;
 }
 .sale {
   background-color: rgb(238, 70, 70);
@@ -53,6 +52,8 @@ article {
 .more-info {
   text-decoration: underline;
   color: black;
+  margin-bottom: 10px;
+  /* margin-top: -12px; */
 }
 .more-info:link,
 .more-info:visited {
@@ -83,10 +84,10 @@ article {
   background-color: rgb(57, 226, 41);
 }
 .color-brown {
-  background-color: rgb(124, 64, 7);
+  background-color: rgb(146, 55, 13);
 }
 .details-title {
-  /*margin-top: 22px;*/
+  margin-top: 22px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -98,11 +99,11 @@ article {
 .add-cart {
   background-color: black;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   border: none;
-  width: 100%;
-  padding: 22px;
+  width: 100.2%;
+  padding: 20px;
 }
 .add-cart:hover {
   cursor: pointer;
@@ -111,26 +112,31 @@ article {
   color: black;
 }
 
-/* Using FLoats for our required sections*/
-.image-part {
-  float: left;
+/*Using CSS Grid */
+
+.product {
+  display: grid;
+  grid-template-columns: 270px 1fr 1fr;
+  column-gap: 20px;
+  /* row-gap: 2px; */
 }
-.price-part {
-  float: left;
-  width: 240px;
-  margin-left: 30px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+.title {
+  grid-column: 1 / -1;
 }
-.details-part {
-  float: right;
-  width: 240px;
-  margin-right: 30px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+.add-cart {
+  grid-column: 1 / -1;
 }
-.product-description {
-  clear: both;
-  margin-top: 22px;
-  margin-bottom: 10px;
+.product-info {
+  flex: 1;
+  margin-top: 20px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product-details {
+  margin-top: 0px;
+  flex: 1;
 }

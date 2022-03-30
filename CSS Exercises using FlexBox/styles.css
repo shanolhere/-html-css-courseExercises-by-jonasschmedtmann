@@ -84,6 +84,9 @@ article {
 .color-green {
   background-color: rgb(57, 226, 41);
 }
+.color-brown {
+  background-color: rgb(146, 55, 13);
+}
 .details-title {
   margin-top: 22px;
   text-transform: uppercase;
