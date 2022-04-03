@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <title>Table Component</title>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body {
+            font-family: "Inter", sans-serif;
+            line-height:1;
+            display: flex;
+            justify-content: center;
+          }
+          table{
+              margin:120px auto;
+              width:800px;
+              border-collapse: collapse;
+              /* border:2px solid black; */
+          }
+          th, td{
+            /* border:2px solid black; */
+            padding:14px;
+            text-align: left;
+          }
+          thead tr{
+              background-color: #087f5b;
+              color:white;
+              font-weight:bold;
+          }
+          thead th{
+              width:25%;
+          }
+          tbody tr:nth-child(even){
+              background-color:#dee2e6;
+          }
+          tbody tr:nth-child(odd){
+              background-color:#f1f3f5;
+          }
+          tbody td{
+              color:black;
+              font-weight:200;
+          }
+        </style>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chair</th>
+                        <th>The Laid Back</th>
+                        <th>The Worker Bee</th>
+                        <th>The Chair 4/2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Width</th>
+                        <td>80 cm</td>
+                        <td>60 cm</td>
+                        <td>220 cm</td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+                        <td>100 cm</td>
+                        <td>110 cm</td>
+                        <td>90 cm</td>
+                    </tr>
+                    <tr>
+                        <th>Depth</th>
+                        <td>70 cm</td>
+                        <td>65 cm</td>
+                        <td>80 cm</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>16 kg</td>
+                        <td>22 kg</td>
+                        <td>80 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+</html>
