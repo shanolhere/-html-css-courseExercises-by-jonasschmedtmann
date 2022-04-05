@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <title>Carousel</title>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body {
+            font-family: "Inter", sans-serif;
+            display:flex;
+            justify-content: center;
+            line-height: 1;
+          }
+          .pagination{
+            margin-top:180px;
+            display:flex;
+            align-items: center;
+            gap:14px;
+          }
+          .btn{
+              width:32px;
+              height:32px;
+              border:none;
+              border-radius: 50%;
+              border:2px solid #087f5b;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .btn:hover{
+            background-color: #087f5b;
+            color:white;
+          }
+          .btn:hover .icon{
+              stroke:white;
+          }
+          .icon{
+            width:20px;
+            height:20px;
+            stroke:#087f5b;
+            
+          }
+          .page-link:link, .page-link:visited{
+              text-decoration: none;
+              font-size:18px;
+              color:black;
+              font-weight: bold;
+              /* margin:6px; */
+              height:28px;
+              width: 28px;;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+          }
+          .page-link:hover, .page-link:active, .page-link.active{
+              background-color: #087f5b;
+              color:white;
+          }
+          .dots{
+              color:#868e96;
+              font-weight: bold;
+          }
+
+        </style>
+        <body>
+            <div class="pagination">
+                <button class="btn btn-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg></button>
+                <a href="#" class="page-link">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link active">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link">6</a>
+                <span class="dots">...</span>
+                <a href="#" class="page-link">26</a>
+                <button class="btn btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg></button>
+
+            </div>
+        </body>
+</html>   
